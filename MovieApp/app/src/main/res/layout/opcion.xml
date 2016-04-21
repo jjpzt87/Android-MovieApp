@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- Vistas que se usan para dibujar cada opción del listado del ListActivity -->
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="200px"
+        android:layout_height="300px"
+        android:layout_marginRight="6dip" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/LblTitulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LblSubTitulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

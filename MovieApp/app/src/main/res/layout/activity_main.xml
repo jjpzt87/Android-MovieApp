@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/bTopRated"
+            android:layout_width="87pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Top Rated"
+            android:textColor="#ffffff"
+            android:onClick="botonRated"
+            android:background="#22dada"
+            android:textAlignment="center" />
+
+        <Button android:id="@+id/bPopular"
+            android:layout_width="87pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Popular"
+            android:textColor="#ffffff"
+            android:onClick="botonPopular"
+            android:background="#000000"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <!-- Esta Vista dibuja una línea en el UI -->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/bPreviews"
+            android:layout_width="87pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Previews Page"
+            android:onClick="botonPreview"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:textAlignment="center" />
+
+        <Button android:id="@+id/bNext"
+            android:layout_width="87pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Next Page"
+            android:onClick="botonNext"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
